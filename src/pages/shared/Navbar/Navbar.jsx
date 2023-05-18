@@ -17,13 +17,20 @@ const Navbar = () => {
     }
     const navLi = <>
 
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='about'>About</Link></li>
+        <li className='font-bold'><Link to='/'>Home</Link></li>
+        <li className='font-bold'><Link to='/blogs'>Blogs</Link></li>
+        <li className='font-bold'><Link to='/error'>Error</Link></li>
+        <li className='font-bold'><Link to='/blogs'>All toys</Link></li>
+
 
         {user?.email ?
             <>
                 <div className="mr-3">
-                    <li><Link to='bookings'>My bookings</Link></li>
+                    <li className='font-bold'><Link to='bookings'>Add a Toy</Link></li>
+                </div>
+
+                <div className="mr-3">
+                    <li className='font-bold'><Link to='bookings'>My Toys</Link></li>
                 </div>
 
                 <div className="avatar gap-3">
@@ -33,11 +40,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="ml-3">
-                    <li> <button onClick={handelLogout}>Logout</button></li>
+                    <li className='font-bold'> <button onClick={handelLogout}>Logout</button></li>
                 </div>
 
             </> :
-            <li><Link to='login'>Login</Link></li>
+            <li className='font-bold'><Link to='login'>Login</Link></li>
         }
 
     </>
@@ -76,9 +83,7 @@ const Navbar = () => {
 
                 </ul>
             </div >
-            <div className="navbar-end">
-                <button className="btn btn-outline btn-secondary">Apointment</button>
-            </div>
+
         </div >
 
     )

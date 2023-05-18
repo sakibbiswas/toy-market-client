@@ -1,14 +1,17 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Gallery from '../galary/Gallery';
-import Tabs from '../TABS/Tabs';
+import Tabse from '../TABS/Tabse';
+
+
+
 
 const Home = () => {
     return (
         <div >
             <Banner></Banner>
             <Gallery></Gallery>
-            {/* <Tabs></Tabs> */}
+            <Tabse></Tabse>
         </div>
     );
 };
