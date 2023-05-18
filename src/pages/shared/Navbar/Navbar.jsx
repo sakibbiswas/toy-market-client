@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Authcontext } from '../../provider/Authprovider';
+import { Authcontext } from '../../../provider/Authprovider';
+import logo from '../../../assets/logo-design-kids-toys_29937-4737.jpg'
 
 const Navbar = () => {
     const { user, logOut } = useContext(Authcontext);
@@ -15,13 +16,26 @@ const Navbar = () => {
 
     }
     const navLi = <>
+
         <li><Link to='/'>Home</Link></li>
         <li><Link to='about'>About</Link></li>
 
         {user?.email ?
             <>
-                <li><Link to='bookings'>My bookings</Link></li>
-                <li> <button onClick={handelLogout}>Logout</button></li>
+                <div className="mr-3">
+                    <li><Link to='bookings'>My bookings</Link></li>
+                </div>
+
+                <div className="avatar gap-3">
+                    <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                        <img title={user.displayName} src={user.photoURL} />
+                    </div>
+                </div>
+
+                <div className="ml-3">
+                    <li> <button onClick={handelLogout}>Logout</button></li>
+                </div>
+
             </> :
             <li><Link to='login'>Login</Link></li>
         }
@@ -31,7 +45,7 @@ const Navbar = () => {
     return (
 
 
-        <div className="navbar bg-orange-100 h-28 mb-5">
+        <div className="navbar bg-slate-100 h-28 mb-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -44,8 +58,8 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl">
-                    <img src='' alt="" />
+                <Link to='/' className=" items-center">
+                    <img src={logo} alt="" />
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">

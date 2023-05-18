@@ -11,13 +11,15 @@ const Register = () => {
         event.preventDefault();
         const form = event.target;
         const name = form.name.value;
+        const photo = form.photo.value;
+
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+
         createuser(email, password)
             .then(result => {
-                const user = result.user;
-                console.log(user);
+                const loggeduser = result.user;
+                console.log(loggeduser);
                 loggeduser.displayName = name;
                 loggeduser.photoURL = photo;
                 update(name, photo)
@@ -40,6 +42,12 @@ const Register = () => {
                                     <span className="label-text">Name</span>
                                 </label>
                                 <input type="text" name='name' placeholder="Your name" className="input input-bordered" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Photo</span>
+                                </label>
+                                <input type="text" name='photo' placeholder="Your photoUrl" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">

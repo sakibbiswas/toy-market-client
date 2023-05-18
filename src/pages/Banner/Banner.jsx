@@ -1,24 +1,26 @@
 import React from 'react';
+import tadi1 from '../../assets/-teddy-bear3.webp'
+import tadi2 from '../../assets/tadi1.jpg'
+import tadi3 from '../../assets/tady2.webp'
+import tadi4 from '../../assets/1334972-teddy-bear.webp'
 
 
 
 const Banner = () => {
     return (
         <div>
-            <div className="carousel w-full">
+            <div className="carousel w-full " style={{ height: '450px' }}>
                 <div id="item1" className="carousel-item w-full">
-                    <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-                        className="w-full" />
-
+                    <img src={tadi1} className="w-full" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
+                    <img src={tadi2} className="w-full" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
+                    <img src={tadi3} className="w-full" />
                 </div>
                 <div id="item4" className="carousel-item w-full">
-                    <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
+                    <img src={tadi4} className="w-full" />
                 </div>
             </div>
             <div className="flex justify-center w-full py-2 gap-2">
@@ -28,6 +30,7 @@ const Banner = () => {
                 <a href="#item4" className="btn btn-xs">4</a>
             </div>
         </div>
+
     );
 };
 
