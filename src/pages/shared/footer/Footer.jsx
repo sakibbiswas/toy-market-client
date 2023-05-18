@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../../../assets/logo-design-kids-toys_29937-4737.jpg'
+import logo from '../../../assets/attachment_96680655.png'
 
 const Footer = () => {
     return (
         <div>
-            <footer className="footer px-10 py-4 border-t bg-slate-100  text-base-content border-base-300">
+            <footer className="footer px-10 py-4 border-t bg-slate-200 mt-10 text-base-content border-base-300">
                 <div className="items-center grid-flow-col mr-3">
                     <img src={logo} alt="" />
                     <p>TOYS Industries Ltd. <br />Providing reliable tech since 1992</p>
@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <footer className="footer p-10 bg-slate-100 text-base-content">
+            <footer className="footer p-10 bg-slate-200 text-base-content">
                 <div>
                     <span className="footer-title">Services</span>
                     <a className="link link-hover">Branding</a>
@@ -39,7 +39,7 @@ const Footer = () => {
                     <a className="link link-hover">Cookie policy</a>
                 </div>
             </footer>
-            <footer className="footer footer-center p-4 bg-slate-100 text-base-content">
+            <footer className="footer footer-center p-4 bg-slate-200 text-base-content">
                 <div>
                     <p>Copyright © 2023 - All right reserved by Toys Industries Ltd</p>
                 </div>

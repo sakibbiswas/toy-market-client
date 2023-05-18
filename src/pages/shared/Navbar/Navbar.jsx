@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Authcontext } from '../../../provider/Authprovider';
-import logo from '../../../assets/logo-design-kids-toys_29937-4737.jpg'
+import logo from '../../../assets/attachment_96680655.png'
 
 const Navbar = () => {
     const { user, logOut } = useContext(Authcontext);
@@ -45,7 +45,7 @@ const Navbar = () => {
     return (
 
 
-        <div className="navbar bg-slate-100 h-28 mb-5">
+        <div className="navbar bg-slate-200 h-28 mb-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -58,10 +58,16 @@ const Navbar = () => {
                     </ul>
 
                 </div>
+                <div className="mr-5">
+                    <Link to='/' className=" items-center">
+                        <h4 className='text-2xl font-bold text-cyan-600'>Toy-Shop</h4>
+                    </Link>
+                </div>
                 <Link to='/' className=" items-center">
                     <img src={logo} alt="" />
                 </Link>
             </div>
+
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
 
