@@ -1,7 +1,7 @@
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import p1 from '../../assets/1334972-teddy-bear.webp'
 import p2 from '../../assets/-teddy-bear3.webp'
@@ -12,11 +12,39 @@ import p6 from '../../assets/d1.jfif'
 import p7 from '../../assets/d2.webp'
 import p8 from '../../assets/b1.jpg'
 import p9 from '../../assets/b2.jpg'
-import p10 from '../../assets/g2.jpg'
+import Swal from 'sweetalert2'
+
+
 const Tabse = () => {
+
+
+    const notify = () => {
+
+
+        // alert('You have to log in first to view details')
+        Swal.fire({
+            title: 'You have to log in first to view details',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Save',
+            denyButtonText: `Don't save`,
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                Swal.fire('Saved!', '', 'success')
+            } else if (result.isDenied) {
+                Swal.fire('Changes are not saved', '', 'info')
+            }
+        })
+
+
+    }
+
     return (
         <div className='text-center '>
+
             <h1 className='text-center text-3xl text-red-600 font-bold mb-6'>Shop By Category</h1>
+
             <Tabs>
                 <TabList>
                     <Tab>
@@ -28,8 +56,11 @@ const Tabse = () => {
                                 <p className='text-xl font-semibold'>Price : <span>$ 1800</span> </p>
                                 <p className='text-xl font-semibold'></p>
                                 <div className="card-actions justify-end">
+
+
                                     <Link to='/details'>
-                                        <button className="btn btn-primary">View details</button>
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
+
                                     </Link>
                                 </div>
                             </div>
@@ -44,8 +75,8 @@ const Tabse = () => {
                                 <p className='text-xl font-semibold'>Price : <span>$ 1300</span> </p>
                                 <p className='text-xl font-semibold'></p>
                                 <div className="card-actions justify-end">
-                                    <Link to='/detail'>
-                                        <button className="btn btn-primary">View details</button>
+                                    <Link to='/detail' >
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
                                     </Link>
                                 </div>
                             </div>
@@ -61,7 +92,7 @@ const Tabse = () => {
                                 <p className='text-xl font-semibold'></p>
                                 <div className="card-actions justify-end">
                                     <Link to='/details'>
-                                        <button className="btn btn-primary">View details</button>
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
                                     </Link>
                                 </div>
                             </div>
@@ -93,8 +124,8 @@ const Tabse = () => {
                                 <p className='text-xl font-semibold'>Price : <span>$ 1100</span> </p>
                                 <p className='text-xl font-semibold'></p>
                                 <div className="card-actions justify-end">
-                                    <Link>
-                                        <button className="btn btn-primary">View details</button>
+                                    <Link to='/details'>
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
                                     </Link>
                                 </div>
                             </div>
