@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Altoydetail = ({ toy }) => {
-    const { Name, Seller, img, Available_Quantity, price, subtoy, _id } = toy;
-    console.log(toy);
+const Altoydetail = ({ Toy }) => {
+    const { Name, Seller, img, Available_Quantity, price, _id } = Toy;
+    // console.log(toy);
     return (
 
         <tr>
@@ -27,15 +27,9 @@ const Altoydetail = ({ toy }) => {
             </td>
             <td>{Available_Quantity}</td>
             <td>{price}</td>
-            <td>
-                {
-                    subtoy.map(sub => <p>
-                        {sub.name}
-                    </p>)
-                }
-            </td>
+
             <th>
-                <Link to={`/toysdetail/${_id}`}> <button className="btn btn-ghost btn-xs">View details</button></Link>
+                <Link to={`/toysdetail/${_id}`}> <button className="btn btn-xs btn-info">View details</button></Link>
             </th>
         </tr>
 

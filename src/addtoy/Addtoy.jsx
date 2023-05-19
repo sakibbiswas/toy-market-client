@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Swal from 'sweetalert2';
+import { Authcontext } from '../provider/Authprovider';
 
 const Addtoy = () => {
-    const handelAddcoffe = event => {
+    const { user } = useContext(Authcontext)
+    const handelAddToy = event => {
         event.preventDefault();
         const form = event.target;
         const name = form.name.value;
         const quantity = form.quantity.value;
         const Seller = form.Seller.value;
         const Price = form.Price.value;
-        const email = form.email.value;
+        const email = user?.email;
         const Details = form.Details.value;
         const photourl = form.url.value;
         const NewToy = { name, quantity, Seller, Price, email, Details, photourl };
         console.log(NewToy);
         // send data to server
-        fetch('http://localhost:4000/toys', {
+        fetch('http://localhost:4000/toy', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -40,7 +42,7 @@ const Addtoy = () => {
         <div className="bg-slate-300 p-24">
 
             <h2 className='text-3xl text-red-500 font-bold text-center'>Add a Toy</h2>
-            <form onSubmit={handelAddcoffe}>
+            <form onSubmit={handelAddToy}>
 
 
                 <div className='md:flex  '>
@@ -97,7 +99,7 @@ const Addtoy = () => {
                         </label>
                         <label className="input-group">
 
-                            <input type="email" name='email' placeholder="Seller email" className="input input-bordered  w-full" />
+                            <input type="email" defaultValue={user?.email} name='email' placeholder="Seller email" className="input input-bordered  w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-3/6 ml-5">

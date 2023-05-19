@@ -30,7 +30,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="mr-3">
-                    <li className='font-bold'><Link to='bookings'>My Toys</Link></li>
+                    <li className='font-bold'><Link to='mytoys'>My Toys</Link></li>
                 </div>
 
                 <div className="avatar gap-3">

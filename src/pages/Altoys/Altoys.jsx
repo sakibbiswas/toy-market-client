@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Altoydetail from '../altoydetails/Altoydetail';
 
 const Altoys = () => {
-    const [toys, settoys] = useState([])
+    const [Toys, Settoys] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:4000/toys`, {
+        fetch('http://localhost:4000/toys', {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -12,7 +12,7 @@ const Altoys = () => {
 
         })
             .then(res => res.json())
-            .then(data => settoys(data))
+            .then(data => Settoys(data))
     }, [])
     return (
         <div>
@@ -26,7 +26,7 @@ const Altoys = () => {
                             <th>Products name</th>
                             <th>Quantity</th>
                             <th>Price</th>
-                            <th>SUB-Products</th>
+
                             <th>Details</th>
                         </tr>
 
@@ -35,9 +35,9 @@ const Altoys = () => {
                     <tbody>
 
                         {
-                            toys.map(toy => <Altoydetail
-                                key={toy._id}
-                                toy={toy}></Altoydetail>)
+                            Toys.map(Toy => <Altoydetail
+                                key={Toy._id}
+                                Toy={Toy}></Altoydetail>)
                         }
 
                     </tbody>
