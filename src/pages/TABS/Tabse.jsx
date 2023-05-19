@@ -54,7 +54,7 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Dog</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>44</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1800</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.4</p>
                                 <div className="card-actions justify-end">
 
 
@@ -73,7 +73,7 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Dog</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>55</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1300</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.5</p>
                                 <div className="card-actions justify-end">
                                     <Link to='/detail' >
                                         <button onClick={notify} className="btn btn-primary">View details</button>
@@ -89,7 +89,7 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Dog</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>45</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1500</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.3</p>
                                 <div className="card-actions justify-end">
                                     <Link to='/details'>
                                         <button onClick={notify} className="btn btn-primary">View details</button>
@@ -108,10 +108,10 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Horse</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>33</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1200</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.6</p>
                                 <div className="card-actions justify-end">
-                                    <Link>
-                                        <button className="btn btn-primary">View details</button>
+                                    <Link to='/details'>
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
                                     </Link>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Horse</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>43</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1100</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.4</p>
                                 <div className="card-actions justify-end">
                                     <Link to='/details'>
                                         <button onClick={notify} className="btn btn-primary">View details</button>
@@ -143,10 +143,10 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Dinasor</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>44</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1300</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.3</p>
                                 <div className="card-actions justify-end">
-                                    <Link>
-                                        <button className="btn btn-primary">View details</button>
+                                    <Link to='/details'>
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
                                     </Link>
                                 </div>
                             </div>
@@ -157,10 +157,10 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Dinasor</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>44</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1300</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.2</p>
                                 <div className="card-actions justify-end">
-                                    <Link>
-                                        <button className="btn btn-primary">View details</button>
+                                    <Link to='/details'>
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
                                     </Link>
                                 </div>
                             </div>
@@ -177,10 +177,10 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : unicorn</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>80</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1700</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.4</p>
                                 <div className="card-actions justify-end">
-                                    <Link>
-                                        <button className="btn btn-primary">View details</button>
+                                    <Link to='/details'>
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
                                     </Link>
                                 </div>
                             </div>
@@ -191,10 +191,10 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : unicorn</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>78</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1200</span> </p>
-                                <p className='text-xl font-semibold'></p>
+                                <p className='text-xl font-semibold'>Rating : 4.2</p>
                                 <div className="card-actions justify-end">
-                                    <Link>
-                                        <button className="btn btn-primary">View details</button>
+                                    <Link to='/details'>
+                                        <button onClick={notify} className="btn btn-primary">View details</button>
                                     </Link>
                                 </div>
                             </div>

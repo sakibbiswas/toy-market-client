@@ -20,13 +20,13 @@ const Navbar = () => {
         <li className='font-bold'><Link to='/'>Home</Link></li>
         <li className='font-bold'><Link to='/blogs'>Blogs</Link></li>
         <li className='font-bold'><Link to='/error'>Error</Link></li>
-        <li className='font-bold'><Link to='/blogs'>All toys</Link></li>
+        <li className='font-bold'><Link to='/alltoys'>All toys</Link></li>
 
 
         {user?.email ?
             <>
                 <div className="mr-3">
-                    <li className='font-bold'><Link to='bookings'>Add a Toy</Link></li>
+                    <li className='font-bold'><Link to='addtoy'>Add a Toy</Link></li>
                 </div>
 
                 <div className="mr-3">
