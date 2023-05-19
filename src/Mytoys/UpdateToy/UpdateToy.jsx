@@ -33,7 +33,7 @@ const UpdateToy = () => {
                 if (data.modifiedCount > 0) {
                     Swal.fire({
                         title: 'success',
-                        text: 'Coffee updated successfully',
+                        text: 'Toy updated successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
@@ -53,7 +53,7 @@ const UpdateToy = () => {
                 <div className='md:flex  '>
                     <div className="form-control md:w-3/6 ">
                         <label className="label">
-                            <span className="label-text"> Name</span>
+                            <span className="label-text font-bold text-slate-800"> Name</span>
                         </label>
                         <label className="input-group">
 
@@ -62,7 +62,7 @@ const UpdateToy = () => {
                     </div>
                     <div className="form-control md:w-3/6 ml-5">
                         <label className="label">
-                            <span className="label-text">Available quantity</span>
+                            <span className="label-text font-bold text-slate-800">Available quantity</span>
                         </label>
                         <label className="input-group">
 
@@ -76,7 +76,7 @@ const UpdateToy = () => {
                 <div className='md:flex  '>
                     <div className="form-control md:w-3/6 ">
                         <label className="label">
-                            <span className="label-text">Seller</span>
+                            <span className="label-text font-bold text-slate-800">Seller</span>
                         </label>
                         <label className="input-group">
 
@@ -85,7 +85,7 @@ const UpdateToy = () => {
                     </div>
                     <div className="form-control md:w-3/6 ml-5">
                         <label className="label">
-                            <span className="label-text">Price</span>
+                            <span className="label-text font-bold text-slate-800">Price</span>
                         </label>
                         <label className="input-group">
 
@@ -100,7 +100,7 @@ const UpdateToy = () => {
                 <div className='md:flex  '>
                     <div className="form-control md:w-3/6 ">
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span className="label-text font-bold text-slate-800">Email</span>
                         </label>
                         <label className="input-group">
 
@@ -109,7 +109,7 @@ const UpdateToy = () => {
                     </div>
                     <div className="form-control md:w-3/6 ml-5">
                         <label className="label">
-                            <span className="label-text">Details</span>
+                            <span className="label-text font-bold text-slate-800">Details</span>
                         </label>
                         <label className="input-group">
 
@@ -120,7 +120,7 @@ const UpdateToy = () => {
                 <div className='mb-8 '>
                     <div className="form-control md:w-full ">
                         <label className="label">
-                            <span className="label-text">Photo-Url</span>
+                            <span className="label-text font-bold text-slate-800">Photo-Url</span>
                         </label>
                         <label className="input-group">
 

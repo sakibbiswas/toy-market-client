@@ -8,7 +8,7 @@ const Toydetails = () => {
         , _id, Rating } = Toydetails;
 
     return (
-        <div className="card lg:card-side bg-base-100 shadow-xl">
+        <div className="card lg:card-side bg-slate-300 shadow-xl">
             <figure><img src={img} className='rounded-xl ' alt="Album" /></figure>
             <div className="card-body">
                 <h2 className="font-semibold text-zinc-600">

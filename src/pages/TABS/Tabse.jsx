@@ -1,7 +1,7 @@
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import p1 from '../../assets/1334972-teddy-bear.webp'
 import p2 from '../../assets/-teddy-bear3.webp'
@@ -14,9 +14,12 @@ import p8 from '../../assets/b1.jpg'
 import p9 from '../../assets/b2.jpg'
 import Swal from 'sweetalert2'
 
+import { Rating } from '@smastrom/react-rating'
+
+import '@smastrom/react-rating/style.css'
 
 const Tabse = () => {
-
+    const [rating, setRating] = useState(0)
 
     const notify = () => {
 
@@ -54,8 +57,14 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Dog</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>44</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1800</span> </p>
-                                <p className='text-xl font-semibold'>Rating : 4.4</p>
+
+                                <div className=" flex items-center ">
+                                    <p className='text-xl font-semibold'>Rating :4.4</p>
+                                    <Rating style={{ maxWidth: 100 }} readOnly />
+
+                                </div>
                                 <div className="card-actions justify-end">
+
 
 
                                     <Link to='/details'>
@@ -73,7 +82,7 @@ const Tabse = () => {
                                 <h2 className="text-xl font-semibold">Name : Dog</h2>
                                 <p className='text-xl font-semibold'>Likes : <span>55</span>  </p>
                                 <p className='text-xl font-semibold'>Price : <span>$ 1300</span> </p>
-                                <p className='text-xl font-semibold'>Rating : 4.5</p>
+                                <p className='text-xl font-semibold'>Rating : 4.3</p>
                                 <div className="card-actions justify-end">
                                     <Link to='/detail' >
                                         <button onClick={notify} className="btn btn-primary">View details</button>
