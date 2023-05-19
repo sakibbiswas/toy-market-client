@@ -7,7 +7,7 @@ const Mytoys = () => {
     const [Toy, setToy] = useState(Toys)
 
     return (
-        <div>
+        <div >
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     <thead>

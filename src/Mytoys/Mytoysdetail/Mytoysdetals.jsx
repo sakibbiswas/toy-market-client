@@ -9,7 +9,7 @@ const Mytoysdetals = ({ toy, setToy, Toy }) => {
         console.log(_id);
         Swal.fire({
             title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            text: "You won't be able to Delete this!",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
@@ -68,7 +68,7 @@ const Mytoysdetals = ({ toy, setToy, Toy }) => {
                 {Seller}
             </td>
             <th>
-                <Link to={`/toysdetail/${_id}`}> <button className="btn btn-outline">Update</button></Link>
+                <Link to={`/updatetoy/${_id}`}> <button className="btn btn-outline">Update</button></Link>
             </th>
         </tr>
     );
