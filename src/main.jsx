@@ -19,6 +19,7 @@ import Toydetails from './pages/Toysdetails/Toydetails.jsx';
 import Addtoy from './addtoy/Addtoy.jsx';
 import Mytoys from './Mytoys/Mytoys.jsx';
 import UpdateToy from './Mytoys/UpdateToy/UpdateToy.jsx';
+import Blogs from './pages/Blogs/Blogs.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>,
+      },
+      {
+        path: '/blogs',
+        element: <Blogs></Blogs>,
       },
       {
         path: '/details',

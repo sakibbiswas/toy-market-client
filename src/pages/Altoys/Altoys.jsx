@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Altoydetail from '../altoydetails/Altoydetail';
 import { Authcontext } from '../../provider/Authprovider';
+import useTitle from '../../components/Hooks/Usetitle';
 
 const Altoys = () => {
+    useTitle('ALLtoys')
     const [Toys, Settoys] = useState([])
     const { user } = useContext(Authcontext)
     const [searchText, setsearchText] = useState("")

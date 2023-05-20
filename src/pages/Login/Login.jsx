@@ -3,8 +3,10 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Sociallogin from '../sociallogin/Sociallogin';
 import { Authcontext } from '../../provider/Authprovider';
+import useTitle from '../../components/Hooks/Usetitle';
 
 const Login = () => {
+    useTitle('Login')
     const { signIn } = useContext(Authcontext)
     const location = useLocation();
     const from = location.state?.from?.pathname || '/'

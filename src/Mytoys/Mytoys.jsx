@@ -2,8 +2,10 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Mytoysdetals from './Mytoysdetail/Mytoysdetals';
 import { Authcontext } from '../provider/Authprovider';
+import useTitle from '../components/Hooks/Usetitle';
 
 const Mytoys = () => {
+    useTitle('MYToys')
     const { user } = useContext(Authcontext)
     // const Toys = useLoaderData()
     // const [Toy, setToy] = useState(Toys)
