@@ -13,11 +13,11 @@ const Addtoy = () => {
         const Price = form.Price.value;
         const email = user?.email;
         const Details = form.Details.value;
-        const photourl = form.url.value;
-        const NewToy = { name, quantity, Seller, Price, email, Details, photourl };
+        const photo = form.url.value;
+        const NewToy = { name, quantity, Seller, Price, email, Details, photo };
         console.log(NewToy);
         // send data to server
-        fetch('http://localhost:4000/toy', {
+        fetch(`http://localhost:4000/toy?email=${user.email}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

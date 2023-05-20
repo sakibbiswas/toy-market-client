@@ -26,7 +26,7 @@ const Navbar = () => {
         {user?.email ?
             <>
                 <div className="mr-3">
-                    <li className='font-bold'><Link to='addtoy'>Add a Toy</Link></li>
+                    <li className='font-bold'><Link to='/addtoy'>Add a Toy</Link></li>
                 </div>
 
                 <div className="mr-3">

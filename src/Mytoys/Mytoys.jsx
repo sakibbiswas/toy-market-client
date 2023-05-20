@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Mytoysdetals from './Mytoysdetail/Mytoysdetals';
+import { Authcontext } from '../provider/Authprovider';
 
 const Mytoys = () => {
-    const Toys = useLoaderData()
-    const [Toy, setToy] = useState(Toys)
+    const { user } = useContext(Authcontext)
+    // const Toys = useLoaderData()
+    // const [Toy, setToy] = useState(Toys)
+    const [Toy, setToy] = useState([])
+    const url = `http://localhost:4000/toy?email=${user.email}`
+    useEffect(() => {
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                setToy(data);
+            })
+    }, [])
 
     return (
         <div >
