@@ -5,9 +5,9 @@ const Footer = () => {
     return (
         <div>
             <footer className="footer px-10 py-4 border-t bg-slate-200 mt-10 text-base-content border-base-300">
-                <div className="items-center grid-flow-col mr-3">
+                <div className="items-center grid-flow-col gap-10 mr-10">
                     <img src={logo} alt="" />
-                    <p className='font-bold text-sky-600' >TOYS Industries Ltd.</p>
+                    <p className='font-bold text-sky-700 text-2xl' >TOYS Industries Ltd.</p>
                 </div>
                 <div className="md:place-self-center md:justify-self-end">
                     <div className="grid grid-flow-col gap-4">
@@ -22,11 +22,11 @@ const Footer = () => {
             </footer>
             <footer className="footer p-10 bg-slate-200 text-base-content">
                 <div>
-                    <span className="footer-title">Services</span>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <span className="footer-title text-slate-900 ">Services</span>
+                    <a className="link link-hover ">Branding</a>
+                    <a className="link link-hover ">Design</a>
+                    <a className="link link-hover ">Marketing</a>
+                    <a className="link link-hover ">Advertisement</a>
                 </div>
                 <div>
                     <span className="footer-title">Company</span>

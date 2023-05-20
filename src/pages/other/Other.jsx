@@ -1,8 +1,29 @@
 import React from 'react';
-
+import i1 from '../../assets/i1.jpg'
+import i2 from '../../assets/best-beginner-camera-for-instagram-photography.webp'
+import i3 from '../../assets/ii2.jpg'
 const Other = () => {
     return (
-        <div className=""></div>
+        <div className="mt-5 mb-5">
+            <h2 className='text-center font-bold text-red-500 text-3xl mb-5'>Follows Us Our Instragram</h2>
+            <div className='grid lg:grid-cols-3 gap-8 '>
+                <div className={` transform  transition decoration-500 hover:scale-75`} >
+                    <img style={{ width: '500px', height: '400px' }} src={i1} alt="" />
+
+                </div>
+                <div className={` transform  transition decoration-500 hover:scale-75`} >
+                    <img style={{ width: '500px', height: '400px' }} src={i2} alt="" />
+
+                </div>
+                <div className={` transform  transition decoration-500 hover:scale-75`}>
+                    <img style={{ width: '500px', height: '400px' }} src={i3} alt="" />
+
+                </div>
+
+
+            </div>
+
+        </div>
     );
 };
 

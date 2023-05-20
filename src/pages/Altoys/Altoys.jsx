@@ -37,7 +37,7 @@ const Altoys = () => {
                     <button onClick={handelsearch} className="btn btn-info">Search</button>
                 </div>
             </div>
-            <div className="overflow-x-auto w-full">
+            <div className="overflow-x-auto lg: w-full">
                 <table className="table w-full">
                     <thead>
                         <tr>

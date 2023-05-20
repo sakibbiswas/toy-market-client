@@ -21,7 +21,7 @@ const Mytoys = () => {
 
     return (
         <div >
-            <div className="overflow-x-auto w-full">
+            <div className="overflow-x-auto lg: w-full">
                 <table className="table w-full">
                     <thead>
                         <tr>

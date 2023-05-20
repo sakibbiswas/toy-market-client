@@ -4,6 +4,7 @@ import Gallery from '../galary/Gallery';
 import Tabse from '../TABS/Tabse';
 import useTitle from '../../components/Hooks/Usetitle';
 import Other from '../other/Other';
+import Subscribe from '../Subscribe/Subscribe';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Gallery></Gallery>
             <Tabse></Tabse>
             <Other></Other>
+            <Subscribe></Subscribe>
         </div>
     );
 };
