@@ -9,14 +9,15 @@ const Addtoy = () => {
     const handelAddToy = event => {
         event.preventDefault();
         const form = event.target;
-        const name = form.name.value;
-        const quantity = form.quantity.value;
+        const Name = form.Name.value;
+        const Available_Quantity = form.Available_Quantity.value;
         const Seller = form.Seller.value;
-        const Price = form.Price.value;
+        const price = form.price.value;
+        const Rating = form.Rating.value;
         const email = user?.email;
-        const Details = form.Details.value;
-        const photo = form.url.value;
-        const NewToy = { name, quantity, Seller, Price, email, Details, photo };
+        const description = form.description.value;
+        const img = form.img.value;
+        const NewToy = { Name, Available_Quantity, Rating, Seller, price, email, description, img };
         console.log(NewToy);
         // send data to server
         fetch(`http://localhost:4000/toy?email=${user.email}`, {
@@ -41,7 +42,7 @@ const Addtoy = () => {
 
     }
     return (
-        <div className="bg-slate-300 p-24">
+        <div className="bg-sky-300 p-24">
 
             <h2 className='text-3xl text-red-500 font-bold text-center'>Add a Toy</h2>
             <form onSubmit={handelAddToy}>
@@ -50,20 +51,20 @@ const Addtoy = () => {
                 <div className='md:flex  '>
                     <div className="form-control md:w-3/6 ">
                         <label className="label">
-                            <span className="label-text"> Name</span>
+                            <span className="label-text font-bold text-slate-800"> Name</span>
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='name' placeholder="Products-Name" className="input input-bordered  w-full" />
+                            <input type="text" name='Name' placeholder="Products-Name" className="input input-bordered  w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-3/6 ml-5">
                         <label className="label">
-                            <span className="label-text">Available quantity</span>
+                            <span className="label-text font-bold text-slate-800">Available quantity</span>
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='quantity' placeholder="Quantity" className="input input-bordered w-full" />
+                            <input type="text" name='Available_Quantity' placeholder="Quantity" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -73,7 +74,7 @@ const Addtoy = () => {
                 <div className='md:flex  '>
                     <div className="form-control md:w-3/6 ">
                         <label className="label">
-                            <span className="label-text">Seller</span>
+                            <span className="label-text font-bold text-slate-800">Seller</span>
                         </label>
                         <label className="input-group">
 
@@ -82,11 +83,11 @@ const Addtoy = () => {
                     </div>
                     <div className="form-control md:w-3/6 ml-5">
                         <label className="label">
-                            <span className="label-text">Price</span>
+                            <span className="label-text font-bold text-slate-800">Price</span>
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='Price' placeholder="Price" className="input input-bordered w-full" />
+                            <input type="text" name='price' placeholder="Price" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -97,7 +98,7 @@ const Addtoy = () => {
                 <div className='md:flex  '>
                     <div className="form-control md:w-3/6 ">
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span className="label-text font-bold text-slate-800">Email</span>
                         </label>
                         <label className="input-group">
 
@@ -106,25 +107,33 @@ const Addtoy = () => {
                     </div>
                     <div className="form-control md:w-3/6 ml-5">
                         <label className="label">
-                            <span className="label-text">Details</span>
+                            <span className="label-text font-bold text-slate-800">Details</span>
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='Details' placeholder="Toy-Details" className="input input-bordered w-full" />
+                            <input type="text" name='description' placeholder="Toy-Details" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
-                <div className='mb-8 '>
-                    <div className="form-control md:w-full ">
+                <div className='md:flex  mb-6 '>
+                    <div className="form-control md:w-3/6 ">
                         <label className="label">
-                            <span className="label-text">Photo-Url</span>
+                            <span className="label-text font-bold text-slate-800">Rating</span>
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='url' placeholder=" URL of the toy" className="input input-bordered  w-full" />
+                            <input type="text" name='Rating' placeholder="Rating" className="input input-bordered  w-full" />
                         </label>
                     </div>
+                    <div className="form-control md:w-3/6 ml-5">
+                        <label className="label">
+                            <span className="label-text font-bold text-slate-800">Photo url</span>
+                        </label>
+                        <label className="input-group">
 
+                            <input type="text" name='img' placeholder="Toy-Details" className="input input-bordered w-full" />
+                        </label>
+                    </div>
                 </div>
 
                 <input type="submit" value="ADD a Toy" className="btn btn-block" />

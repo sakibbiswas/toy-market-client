@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const Mytoysdetals = ({ toy, setToy, Toy }) => {
-    const { name, Seller, photo, quantity, Price, _id, email } = toy;
+    const { Name, Seller, img, Available_Quantity, price, _id, email } = toy;
 
     const handeldeleteToy = _id => {
         console.log(_id);
@@ -50,20 +50,20 @@ const Mytoysdetals = ({ toy, setToy, Toy }) => {
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
                         <div className="mask mask-squircle w-12 h-12">
-                            <img src={photo} alt="Avatar Tailwind CSS Component" />
+                            <img src={img} alt="Avatar Tailwind CSS Component" />
                         </div>
                     </div>
 
                 </div>
             </td>
             <td>
-                {name}
+                {Name}
 
 
             </td>
             <td>{email}</td>
-            <td>{quantity}</td>
-            <td>{Price}</td>
+            <td>{Available_Quantity}</td>
+            <td>{price}</td>
             <td>
                 {Seller}
             </td>

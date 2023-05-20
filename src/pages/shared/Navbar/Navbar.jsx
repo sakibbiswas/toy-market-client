@@ -67,7 +67,7 @@ const Navbar = () => {
                 </div>
                 <div className="mr-5">
                     <Link to='/' className=" items-center">
-                        <h4 className='text-2xl font-bold text-cyan-600'>Toy-Shop</h4>
+                        <h4 className='text-2xl font-bold text-sky-600 pl-3'>Toy-Shop</h4>
                     </Link>
                 </div>
                 <Link to='/' className=" items-center">

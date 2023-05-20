@@ -5,20 +5,19 @@ import Swal from 'sweetalert2';
 
 const UpdateToy = () => {
     const updateToy = useLoaderData();
-    const { name, quantity, Seller, Price, email, Details, photourl, _id } = updateToy;
+    const { Name, Available_Quantity, Seller, Rating, price, email, description, img, _id } = updateToy;
     const { user } = useContext(Authcontext)
     const handelUpdateToy = event => {
         event.preventDefault();
-        const form = event.target;
-        const name = form.name.value;
-        const quantity = form.quantity.value;
+        const Name = form.Name.value;
+        const Available_Quantity = form.Available_Quantity.value;
         const Seller = form.Seller.value;
-        const Price = form.Price.value;
+        const price = form.price.value;
+        const Rating = form.Rating.value;
         const email = user?.email;
-        const Details = form.Details.value;
-        const photourl = form.url.value;
-        const updateToy = { name, quantity, Seller, Price, email, Details, photourl };
-        console.log(updateToy);
+        const description = form.description.value;
+        const img = form.img.value;
+        const updateToy = { Name, Available_Quantity, Rating, Seller, price, email, description, img };
         // send data to server
         fetch(`http://localhost:4000/toy/${_id}`, {
             method: "PUT",
@@ -44,7 +43,7 @@ const UpdateToy = () => {
 
 
     return (
-        <div className="bg-slate-300 p-24">
+        <div className="bg-sky-300 p-24">
 
             <h2 className='text-3xl text-red-500 font-bold text-center'>Update a Toy</h2>
             <form onSubmit={handelUpdateToy}>
@@ -57,7 +56,7 @@ const UpdateToy = () => {
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='name' defaultValue={name} placeholder="Products-Name" className="input input-bordered  w-full" />
+                            <input type="text" name='Name' defaultValue={Name} placeholder="Products-Name" className="input input-bordered  w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-3/6 ml-5">
@@ -66,7 +65,7 @@ const UpdateToy = () => {
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='quantity' defaultValue={quantity} placeholder="Quantity" className="input input-bordered w-full" />
+                            <input type="text" name='Available_Quantity' defaultValue={Available_Quantity} placeholder="Quantity" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -89,7 +88,7 @@ const UpdateToy = () => {
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='Price' defaultValue={Price} placeholder="Price" className="input input-bordered w-full" />
+                            <input type="text" name='price' defaultValue={price} placeholder="Price" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -113,22 +112,31 @@ const UpdateToy = () => {
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='Details' defaultValue={Details} placeholder="Toy-Details" className="input input-bordered w-full" />
+                            <input type="text" name='description' defaultValue={description} placeholder="Toy-Details" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
-                <div className='mb-8 '>
-                    <div className="form-control md:w-full ">
+                <div className='md:flex  mb-6 '>
+                    <div className="form-control md:w-3/6 ">
                         <label className="label">
-                            <span className="label-text font-bold text-slate-800">Photo-Url</span>
+                            <span className="label-text font-bold text-slate-800">Rating</span>
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='url' defaultValue={photourl} placeholder=" URL of the toy" className="input input-bordered  w-full" />
+                            <input type="text" defaultValue={Rating} name='Rating' placeholder="Rating" className="input input-bordered  w-full" />
                         </label>
                     </div>
+                    <div className="form-control md:w-3/6 ml-5">
+                        <label className="label">
+                            <span className="label-text font-bold text-slate-800">Photo url</span>
+                        </label>
+                        <label className="input-group">
 
+                            <input type="text" name='img' defaultValue={img} placeholder="Toy-Details" className="input input-bordered w-full" />
+                        </label>
+                    </div>
                 </div>
+
 
                 <input type="submit" value="Update a Toy" className="btn btn-block" />
             </form>

@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import useTitle from '../../components/Hooks/Usetitle';
 
 const Altoydetail = ({ Toy }) => {
+
     useTitle('Alltoydetails')
-    const { Name, Seller, img, Available_Quantity, price, _id } = Toy;
+    const { Name, Seller, img, Available_Quantity, price, _id, Details, name, photo, Price, quantity, email, } = Toy;
     // console.log(toy);
     return (
 
