@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import Gallery from '../galary/Gallery';
 import Tabse from '../TABS/Tabse';
 import useTitle from '../../components/Hooks/Usetitle';
+import Other from '../other/Other';
 
 
 
@@ -14,6 +15,7 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <Tabse></Tabse>
+            <Other></Other>
         </div>
     );
 };

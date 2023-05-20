@@ -12,7 +12,6 @@ import Login from './pages/Login/Login.jsx';
 import Register from './pages/register/Register.jsx';
 import Home from './pages/home/Home.jsx';
 import Viewdetails from './pages/view details/Viewdetails.jsx';
-import Details from './pages/dogdetails/Details.jsx';
 import Privaterout from './pages/privateroute/Privaterout.jsx';
 import Altoys from './pages/Altoys/Altoys.jsx';
 import Toydetails from './pages/Toysdetails/Toydetails.jsx';
@@ -20,6 +19,7 @@ import Addtoy from './addtoy/Addtoy.jsx';
 import Mytoys from './Mytoys/Mytoys.jsx';
 import UpdateToy from './Mytoys/UpdateToy/UpdateToy.jsx';
 import Blogs from './pages/Blogs/Blogs.jsx';
+import Error from './pages/Error/Error.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,13 +42,14 @@ const router = createBrowserRouter([
         element: <Blogs></Blogs>,
       },
       {
+        path: '/error',
+        element: <Error></Error>,
+      },
+      {
         path: '/details',
         element: <Privaterout><Viewdetails></Viewdetails></Privaterout>,
       },
-      {
-        path: '/detail',
-        element: <Privaterout><Details></Details></Privaterout>,
-      },
+
       {
         path: '/alltoys',
         element: <Altoys></Altoys>
