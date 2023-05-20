@@ -6,7 +6,8 @@ const Subscribe = () => {
     return (
         <div className="   mt-10">
 
-            <div className='grid lg:grid-cols-2 gap-5 items-center'>
+            <div className='grid lg:grid-cols-2 gap-5 items-center' data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <img style={{ width: '400px', height: '300px' }} className='lg:ml-6 ' src={s1} alt="" />
                 <div>
                     <h2 className='text-4xl font-bold text-sky-500'>Subscribe our Shop page</h2>

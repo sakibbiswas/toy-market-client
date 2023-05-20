@@ -29,7 +29,9 @@ const Altoys = () => {
 
     return (
         <div>
-            <div className='text-center mb-8'>
+            <div className='text-center mb-8'
+                data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <h2 className='text-center mb-5 font-bold text-4xl'>All My Toys</h2>
                 <div className='flex items-center justify-center gap-4'>
 
@@ -37,7 +39,8 @@ const Altoys = () => {
                     <button onClick={handelsearch} className="btn btn-info">Search</button>
                 </div>
             </div>
-            <div className="overflow-x-auto lg: w-full">
+            <div className="overflow-x-auto lg: w-full" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <table className="table w-full">
                     <thead>
                         <tr>

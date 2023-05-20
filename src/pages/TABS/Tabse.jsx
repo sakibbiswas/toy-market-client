@@ -46,8 +46,9 @@ const Tabse = () => {
 
             <h1 className='text-center text-3xl text-red-600 font-bold mb-6'>Shop By Category</h1>
 
-            <Tabs className='bg-slate-100 pb-8'>
-                <TabList className='bg-slate-300' >
+            <Tabs className='bg-slate-100 pb-8 '>
+                <TabList className='bg-slate-300' data-aos="fade-down-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <Tab  >
                         <span className='text-stone-700 font-bold'> Horse</span>
                     </Tab>
@@ -62,7 +63,8 @@ const Tabse = () => {
                 </TabList>
 
                 <TabPanel>
-                    <div className='flex justify-center gap-5 mt-8'>
+                    <div className='flex justify-center gap-5 mt-8' data-aos="zoom-out-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div className="card lg:card-side bg-slate-300 shadow-xl">
                             <figure><img src={p4} className='rounded-2xl p-2' style={{ height: '200px', width: "250px" }} alt="Album" /></figure>
                             <div className="card-body">
@@ -97,7 +99,9 @@ const Tabse = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='flex justify-center gap-5 mt-8'>
+                    <div className='flex justify-center gap-5 mt-8'
+                        data-aos="zoom-out-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div className="card lg:card-side bg-slate-300  shadow-xl">
                             <figure><img src={p6} className='rounded-2xl p-2' style={{ height: '200px', width: "250px" }} alt="Album" /></figure>
                             <div className="card-body">
@@ -132,7 +136,9 @@ const Tabse = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='flex justify-center gap-5 mt-8'>
+                    <div className='flex justify-center gap-5 mt-8'
+                        data-aos="zoom-out-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <div className="card lg:card-side bg-slate-300  shadow-xl">
                             <figure><img src={p8} className='rounded-2xl p-2' style={{ height: '200px', width: "250px" }} alt="Album" /></figure>
                             <div className="card-body">

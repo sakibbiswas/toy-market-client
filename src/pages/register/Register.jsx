@@ -32,7 +32,8 @@ const Register = () => {
             })
     }
     return (
-        <div className="hero min-h-screen ">
+        <div className="hero min-h-screen " data-aos="fade-up"
+            data-aos-duration="3000">
 
 
             <div className="card mt-5 flex-shrink-0 w-full max-w-sm shadow-2xl bg-teal-300">

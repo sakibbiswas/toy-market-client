@@ -20,6 +20,7 @@ import Mytoys from './Mytoys/Mytoys.jsx';
 import UpdateToy from './Mytoys/UpdateToy/UpdateToy.jsx';
 import Blogs from './pages/Blogs/Blogs.jsx';
 import Error from './pages/Error/Error.jsx';
+import ErrorPage from './components/NewLayout/ErrorPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,10 +42,7 @@ const router = createBrowserRouter([
         path: '/blogs',
         element: <Blogs></Blogs>,
       },
-      {
-        path: '/error',
-        element: <Error></Error>,
-      },
+
       {
         path: '/details',
         element: <Privaterout><Viewdetails></Viewdetails></Privaterout>,
@@ -85,6 +83,17 @@ const router = createBrowserRouter([
 
     ]
   },
+  {
+    path: '/',
+    element: <ErrorPage></ErrorPage>,
+    children: [
+
+      {
+        path: '/error',
+        element: <Error></Error>,
+      },
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

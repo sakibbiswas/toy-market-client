@@ -3,8 +3,11 @@ import logo from '../../../assets/attachment_96680655.png'
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer px-10 py-4 border-t bg-slate-200 mt-10 text-base-content border-base-300">
+        <div
+            data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <footer className="footer px-10 py-4 border-t bg-slate-200 mt-10 text-base-content border-base-300"
+            >
                 <div className="items-center grid-flow-col gap-10 mr-10">
                     <img src={logo} alt="" />
                     <p className='font-bold text-sky-700 text-2xl' >TOYS Industries Ltd.</p>

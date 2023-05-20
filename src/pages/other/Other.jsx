@@ -7,15 +7,22 @@ const Other = () => {
         <div className="mt-5 mb-5">
             <h2 className='text-center font-bold text-red-500 text-3xl mb-5'>Follows Us Our Instragram</h2>
             <div className='grid lg:grid-cols-3 gap-8 '>
-                <div className={` transform  transition decoration-500 hover:scale-75`} >
+                <div data-aos="flip-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" >
                     <img style={{ width: '500px', height: '400px' }} src={i1} alt="" />
 
                 </div>
-                <div className={` transform  transition decoration-500 hover:scale-75`} >
+
+                <div data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" >
                     <img style={{ width: '500px', height: '400px' }} src={i2} alt="" />
 
                 </div>
-                <div className={` transform  transition decoration-500 hover:scale-75`}>
+                <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" >
                     <img style={{ width: '500px', height: '400px' }} src={i3} alt="" />
 
                 </div>

@@ -132,7 +132,7 @@ const UpdateToy = () => {
                         </label>
                         <label className="input-group">
 
-                            <input type="text" name='img' defaultValue={img} placeholder="Toy-Details" className="input input-bordered w-full" />
+                            <input type="text" name='img' defaultValue={img} placeholder="Toy-URL" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>

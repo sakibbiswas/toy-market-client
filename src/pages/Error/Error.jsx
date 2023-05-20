@@ -5,7 +5,7 @@ const Error = () => {
     useTitle("Error")
     return (
 
-        <div className='text-center'>
+        <div className='text-center items-center'>
             <img className='w-full' src={pic} alt="" />
 
         </div>

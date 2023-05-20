@@ -10,7 +10,7 @@ const Gallery = () => {
     return (
         <div className='mb-8 ' >
             <h4 className='text-center mt-6 mb-5 font-bold text-red-600 text-3xl'>Best Products</h4>
-            <div className='grid lg:grid-cols-3 gap-6'>
+            <div className='grid lg:grid-cols-3 gap-6' data-aos="fade-up" data-aos-duration="3000">
 
                 <div className="">
                     <img src={g1} style={{ height: '600px', width: '500px' }} alt="" />
