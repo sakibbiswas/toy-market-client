@@ -17,20 +17,26 @@ const Navbar = () => {
     }
     const navLi = <>
 
-        <li className='font-bold'><Link to='/'>Home</Link></li>
-        <li className='font-bold'><Link to='/blogs'>Blogs</Link></li>
-        <li className='font-bold'><Link to='/error'>Error</Link></li>
-        <li className='font-bold'><Link to='/alltoys'>All toys</Link></li>
+        <li className='font-bold text-slate-900 hover:text-orange-500 hover: transform 
+         hover:scale-75 duration-300'><Link to='/'>Home</Link></li>
+        <li className='font-bold text-slate-900 hover:text-orange-500 hover: transform 
+         hover:scale-75 duration-300'><Link to='/blogs'>Blogs</Link></li>
+        <li className='font-bold text-slate-900 hover:text-orange-500 hover: transform 
+         hover:scale-75 duration-300'><Link to='/error'>Error</Link></li>
+        <li className='font-bold text-slate-900 hover:text-orange-500 hover: transform 
+         hover:scale-75 duration-300'><Link to='/alltoys'>All toys</Link></li>
 
 
         {user?.email ?
             <>
                 <div className="mr-3">
-                    <li className='font-bold'><Link to='/addtoy'>Add a Toy</Link></li>
+                    <li className='font-bold text-slate-900 hover:text-orange-500 hover: transform 
+         hover:scale-75 duration-300'><Link to='/addtoy'>Add a Toy</Link></li>
                 </div>
 
                 <div className="mr-3">
-                    <li className='font-bold'><Link to='mytoys'>My Toys</Link></li>
+                    <li className='font-bold text-slate-900 hover:text-orange-500 hover: transform 
+         hover:scale-75 duration-300'><Link to='mytoys'>My Toys</Link></li>
                 </div>
 
                 <div className="avatar gap-3">
@@ -40,11 +46,13 @@ const Navbar = () => {
                 </div>
 
                 <div className="ml-3">
-                    <li className='font-bold'> <button onClick={handelLogout}>Logout</button></li>
+                    <li className='font-bold text-slate-900 hover:text-orange-500 hover: transform 
+         hover:scale-75 duration-300'> <button onClick={handelLogout}>Logout</button></li>
                 </div>
 
             </> :
-            <li className='font-bold'><Link to='login'>Login</Link></li>
+            <li className='font-bold text-slate-900 hover:text-orange-500 hover: transform 
+         hover:scale-75 duration-300'><Link to='login'>Login</Link></li>
         }
 
     </>
@@ -52,7 +60,7 @@ const Navbar = () => {
     return (
 
 
-        <div className="navbar bg-slate-200 h-28 mb-5" data-aos="fade-up"
+        <div className="navbar bg-sky-200 h-28 mb-5" data-aos="fade-up"
             data-aos-duration="3000">
             <div className="navbar-start">
                 <div className="dropdown">
@@ -67,8 +75,9 @@ const Navbar = () => {
 
                 </div>
                 <div className="mr-5">
-                    <Link to='/' className=" items-center">
-                        <h4 className='text-2xl font-bold text-sky-600 pl-3'>Toy-Shop</h4>
+                    <Link to='/' className=" items-center" >
+                        <h4 className='text-2xl font-bold text-sky-700 pl-3' data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">Toy-Shop</h4>
                     </Link>
                 </div>
                 <Link to='/' className=" items-center">

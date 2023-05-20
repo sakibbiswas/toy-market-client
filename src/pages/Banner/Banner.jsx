@@ -9,15 +9,16 @@ import tadi4 from '../../assets/1334972-teddy-bear.webp'
 const Banner = () => {
     return (
         <div className='container lg:mx-auto' >
-            <div className="carousel w-full" style={{ height: '550px' }}>
+            <div className="carousel w-full " style={{ height: '550px' }}>
                 <div id="item1" className="carousel-item relative w-full">
                     <img src={tadi4} className="w-full" />
                     <div className="absolute text-center h-full pl-20    items-center top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]  
    ">
                         <div className='text-white   space-y-7 mt-36  ' data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
-                            <h2 className='text-6xl text-white font-bold '>Pick The Best  <br /> Toy For Your Kid  </h2>
-                            <h2 className='' >Lorem ipsum dolor sit amet, consectetur  praesentium quaerat pariatur temporibus, provident ratione veritatis.</h2>
+                            <h2 className='text-6xl text-white font-bold  '><span className='text-7xl text-orange-500'>Pick </span>The
+                                Best  <br /> Toy For Your Kid  </h2>
+
 
 
                         </div>
@@ -28,8 +29,8 @@ const Banner = () => {
                     <div className="absolute text-center h-full pl-20    items-center top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]  
    ">
                         <div className='text-white   space-y-7 mt-28  '>
-                            <h2 className='text-6xl text-white font-bold '>Pick The Best  <br /> Toy For Your Kid  </h2>
-                            <h2 className='' >Lorem ipsum dolor sit amet, consectetur  praesentium quaerat pariatur temporibus, provident ratione veritatis.</h2>
+                            <h2 className='text-6xl text-white font-bold '><span className='text-7xl text-orange-500'>Pick </span> The Best  <br /> Toy For Your Kid  </h2>
+
 
 
                         </div>
@@ -40,8 +41,8 @@ const Banner = () => {
                     <div className="absolute text-center h-full pl-20    items-center top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]  
    ">
                         <div className='text-white   space-y-7 mt-28  '>
-                            <h2 className='text-6xl text-white font-bold '>Pick The Best  <br /> Toy For Your Kid  </h2>
-                            <h2 className='' >Lorem ipsum dolor sit amet, consectetur  praesentium quaerat pariatur temporibus, provident ratione veritatis.</h2>
+                            <h2 className='text-6xl text-white font-bold '><span className='text-7xl text-orange-500'>Pick </span> The Best  <br /> Toy For Your Kid  </h2>
+
 
 
                         </div>
@@ -52,8 +53,8 @@ const Banner = () => {
                     <div className="absolute text-center h-full pl-20    items-center top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]  
    ">
                         <div className='text-white   space-y-7 mt-28  '>
-                            <h2 className='text-6xl text-white font-bold '>Pick The Best  <br /> Toy For Your Kid  </h2>
-                            <h2 className='' >Lorem ipsum dolor sit amet, consectetur  praesentium quaerat pariatur temporibus, provident ratione veritatis.</h2>
+                            <h2 className='text-6xl text-white font-bold '><span className='text-7xl text-orange-500'>Pick </span> The Best  <br /> Toy For Your Kid  </h2>
+
 
 
                         </div>

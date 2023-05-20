@@ -43,7 +43,8 @@ const UpdateToy = () => {
 
 
     return (
-        <div className="bg-sky-300 p-24">
+        <div className="bg-sky-300 p-24" data-aos="fade-up"
+            data-aos-duration="3000">
 
             <h2 className='text-3xl text-red-500 font-bold text-center'>Update a Toy</h2>
             <form onSubmit={handelUpdateToy}>
@@ -61,7 +62,7 @@ const UpdateToy = () => {
                     </div>
                     <div className="form-control md:w-3/6 ml-5">
                         <label className="label">
-                            <span className="label-text font-bold text-slate-800">Available quantity</span>
+                            <span className="label-text font-bold text-slate-800">Available-quantity</span>
                         </label>
                         <label className="input-group">
 

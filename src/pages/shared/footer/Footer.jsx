@@ -6,7 +6,7 @@ const Footer = () => {
         <div
             data-aos="flip-left" data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
-            <footer className="footer px-10 py-4 border-t bg-slate-200 mt-10 text-base-content border-base-300"
+            <footer className="footer px-10 py-4 border-t bg-sky-200 mt-10 text-base-content border-base-300"
             >
                 <div className="items-center grid-flow-col gap-10 mr-10">
                     <img src={logo} alt="" />
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <footer className="footer p-10 bg-slate-200 text-base-content">
+            <footer className="footer p-10 bg-sky-200 text-base-content">
                 <div>
                     <span className="footer-title text-slate-900 ">Services</span>
                     <a className="link link-hover ">Branding</a>
@@ -38,14 +38,14 @@ const Footer = () => {
                     <a className="link link-hover">Jobs</a>
                     <a className="link link-hover">Press kit</a>
                 </div>
-                <div>
-                    <span className="footer-title">Legal</span>
+                <div >
+                    <span className="footer-title ">Legal</span>
                     <a className="link link-hover">Terms of use</a>
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
                 </div>
             </footer>
-            <footer className="footer footer-center p-4 bg-slate-200 text-base-content">
+            <footer className="footer footer-center p-4 bg-sky-200 text-base-content">
                 <div>
                     <p className='font-bold'>Copyright © 2023 - All right reserved by Toys Industries Ltd</p>
                 </div>

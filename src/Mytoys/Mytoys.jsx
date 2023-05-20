@@ -21,8 +21,8 @@ const Mytoys = () => {
 
     return (
         <div >
-            <div className="overflow-x-auto lg: w-full">
-                <table className="table w-full">
+            <div className="overflow-x-auto lg: w-full ">
+                <table className="table w-full ">
                     <thead>
                         <tr>
 
@@ -39,7 +39,7 @@ const Mytoys = () => {
 
 
                     </thead>
-                    <tbody>
+                    <tbody >
 
                         {
                             Toy.map(toy => <Mytoysdetals

@@ -42,6 +42,21 @@ const Gallery = () => {
                     <h2 className='text-center text-xl font-semibold text-orange-500'>Lite birite</h2>
                     <h2 className='text-center text-xl font-semibold text-orange-500'>Price : $ 1200</h2>
                 </div>
+                <div className="">
+                    <img src={g6} alt="" style={{ height: '600px', width: '500px' }} />
+                    <h2 className='text-center text-xl font-semibold text-orange-500'>Lite birite</h2>
+                    <h2 className='text-center text-xl font-semibold text-orange-500'>Price : $ 1200</h2>
+                </div>
+                <div className="">
+                    <img src={g6} alt="" style={{ height: '600px', width: '500px' }} />
+                    <h2 className='text-center text-xl font-semibold text-orange-500'>Lite birite</h2>
+                    <h2 className='text-center text-xl font-semibold text-orange-500'>Price : $ 1200</h2>
+                </div>
+                <div className="">
+                    <img src={g6} alt="" style={{ height: '600px', width: '500px' }} />
+                    <h2 className='text-center text-xl font-semibold text-orange-500'>Lite birite</h2>
+                    <h2 className='text-center text-xl font-semibold text-orange-500'>Price : $ 1200</h2>
+                </div>
 
             </div>
         </div>
