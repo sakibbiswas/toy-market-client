@@ -39,7 +39,7 @@ const Navbar = () => {
          hover:scale-75 duration-300'><Link to='mytoys'>My Toys</Link></li>
                 </div>
 
-                <div className="avatar gap-3">
+                <div className="avatar gap-3 ">
                     <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                         <img title={user.displayName} src={user.photoURL} />
                     </div>
