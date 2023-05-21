@@ -19,7 +19,7 @@ const UpdateToy = () => {
         const img = form.img.value;
         const updateToy = { Name, Available_Quantity, Rating, Seller, price, email, description, img };
         // send data to server
-        fetch(`http://localhost:4000/toy/${_id}`, {
+        fetch(`https://toy-marketplace-server-ruby.vercel.app/toy/${_id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

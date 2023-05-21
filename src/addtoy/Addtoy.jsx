@@ -20,7 +20,7 @@ const Addtoy = () => {
         const NewToy = { Name, Available_Quantity, Rating, Seller, price, email, description, img };
         console.log(NewToy);
         // send data to server
-        fetch(`http://localhost:4000/toy?email=${user.email}`, {
+        fetch(`https://toy-marketplace-server-ruby.vercel.app/toy?email=${user.email}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

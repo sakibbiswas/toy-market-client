@@ -46,8 +46,8 @@ const Tabse = () => {
 
             <h1 className='text-center text-3xl text-red-600 font-bold mb-6'>Shop By Category</h1>
 
-            <Tabs className='bg-slate-100 pb-8 '>
-                <TabList className='bg-slate-300' data-aos="fade-down-right" data-aos-easing="ease-out-cubic"
+            <Tabs className='bg-sky-300 pb-8 '>
+                <TabList className='bg-sky-400' data-aos="fade-down-right" data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <Tab  >
                         <span className='text-stone-700 font-bold'> Horse</span>

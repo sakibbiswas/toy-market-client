@@ -11,7 +11,7 @@ const Mytoys = () => {
     // const Toys = useLoaderData()
     // const [Toy, setToy] = useState(Toys)
     const [Toy, setToy] = useState([])
-    const url = `http://localhost:4000/toy?email=${user.email}`
+    const url = `https://toy-marketplace-server-ruby.vercel.app/toy?email=${user.email}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

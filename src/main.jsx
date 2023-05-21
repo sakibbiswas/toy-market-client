@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       {
         path: 'toysdetail/:id',
         element: <Privaterout><Toydetails></Toydetails></Privaterout>,
-        loader: ({ params }) => fetch(`http://localhost:4000/toys/${params.id}`)
+        loader: ({ params }) => fetch(`https://toy-marketplace-server-ruby.vercel.app/toys/${params.id}`)
 
 
       },
@@ -71,14 +71,14 @@ const router = createBrowserRouter([
       {
         path: '/mytoys',
         element: <Privaterout><Mytoys></Mytoys></Privaterout>,
-        // loader: () => fetch('http://localhost:4000/toy')
+        // loader: () => fetch('https://toy-marketplace-server-ruby.vercel.app/toy')
 
 
       },
       {
         path: 'updatetoy/:id',
         element: <UpdateToy></UpdateToy>,
-        loader: ({ params }) => fetch(`http://localhost:4000/toy/${params.id}`)
+        loader: ({ params }) => fetch(`https://toy-marketplace-server-ruby.vercel.app/toy/${params.id}`)
       }
 
     ]

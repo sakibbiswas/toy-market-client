@@ -9,7 +9,7 @@ const Altoys = () => {
     const { user } = useContext(Authcontext)
     const [searchText, setsearchText] = useState("")
     useEffect(() => {
-        fetch(`http://localhost:4000/toys`, {
+        fetch(`https://toy-marketplace-server-ruby.vercel.app/toys`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -21,7 +21,7 @@ const Altoys = () => {
     }, [])
 
     const handelsearch = () => {
-        fetch(`http://localhost:4000/searchByTitle/${searchText}`)
+        fetch(`https://toy-marketplace-server-ruby.vercel.app/searchByTitle/${searchText}`)
 
             .then(res => res.json())
             .then(data => Settoys(data))
