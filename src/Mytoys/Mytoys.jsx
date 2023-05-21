@@ -6,6 +6,7 @@ import useTitle from '../components/Hooks/Usetitle';
 
 const Mytoys = () => {
     useTitle('MYToys')
+    const [sortvalue, Setsortvalue] = useState("")
     const { user } = useContext(Authcontext)
     // const Toys = useLoaderData()
     // const [Toy, setToy] = useState(Toys)
@@ -20,7 +21,7 @@ const Mytoys = () => {
     }, [])
 
     return (
-        <div >
+        <div className=''>
             <div className="overflow-x-auto lg: w-full ">
                 <table className="table w-full ">
                     <thead>
