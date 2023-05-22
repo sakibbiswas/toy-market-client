@@ -20,8 +20,21 @@ const Mytoys = () => {
             })
     }, [])
 
+
+
     return (
         <div className=''>
+            <div className="form-control">
+                <div className="input-group mb-5">
+                    <select className="select select-bordered">
+                        <option disabled selected>sort</option>
+                        <option>price</option>
+                        <option></option>
+                    </select>
+
+                </div>
+            </div>
+
             <div className="overflow-x-auto lg: w-full ">
                 <table className="table w-full ">
                     <thead>

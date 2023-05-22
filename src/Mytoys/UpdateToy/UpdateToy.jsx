@@ -9,6 +9,7 @@ const UpdateToy = () => {
     const { user } = useContext(Authcontext)
     const handelUpdateToy = event => {
         event.preventDefault();
+        const form = event.target;
         const Name = form.Name.value;
         const Available_Quantity = form.Available_Quantity.value;
         const Seller = form.Seller.value;
